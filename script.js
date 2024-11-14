@@ -36,21 +36,19 @@ document.getElementById('iniciarQuiz').addEventListener('click', function() {
     carregarPergunta();
 });
 
-
 function carregarPergunta() {
     if (perguntaAtual < perguntas.length) {
         const pergunta = perguntas[perguntaAtual];
         const perguntaContainer = document.getElementById('pergunta-container');
 
-        
         perguntaContainer.innerHTML = '';
 
-     
+       
         const p = document.createElement('p');
         p.textContent = pergunta.pergunta;
         perguntaContainer.appendChild(p);
 
-        // Exibir alternativas
+       
         pergunta.alternativas.forEach((alternativa, index) => {
             const btn = document.createElement('button');
             btn.textContent = alternativa;
@@ -73,13 +71,13 @@ function verificarResposta(respostaUsuario) {
         alert("Tente novamente!");
     }
 
-   
+  
     document.getElementById('pontuacao').textContent = `Pontuação: ${pontuacao}`;
 
     
     perguntaAtual++;
 
-    
+
     if (perguntaAtual === perguntas.length) {
         document.getElementById('finalizarQuiz').classList.remove('escondido');
     } else {
@@ -90,7 +88,7 @@ function verificarResposta(respostaUsuario) {
 
 document.getElementById('finalizarQuiz').addEventListener('click', function() {
     alert(`Quiz finalizado! Você acertou ${pontuacao} de 5 perguntas.`);
-
+  
     pontuacao = 0;
     perguntaAtual = 0;
     document.getElementById('pontuacao').textContent = `Pontuação: ${pontuacao}`;
