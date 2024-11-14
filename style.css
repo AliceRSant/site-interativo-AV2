@@ -7,16 +7,17 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f0f4fc;
     color: #333;
     padding: 20px;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #6a5acd; /* Lilás escuro */
     color: white;
     padding: 20px;
     text-align: center;
+    border-radius: 8px;
 }
 
 h1 {
@@ -36,7 +37,7 @@ button {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #4f84e3; /* Azul claro */
     color: white;
     border: none;
     border-radius: 5px;
@@ -45,7 +46,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #3b6cb3; /* Azul escuro */
 }
 
 .escondido {
@@ -54,6 +55,23 @@ button:hover {
 
 #pergunta-container {
     margin-top: 20px;
+}
+
+#pergunta-container button {
+    display: block; /* Para deixar as alternativas em linha vertical */
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #e0e5f4; /* Azul mais claro */
+    color: #333;
+    font-size: 1.1em;
+    padding: 12px;
+    border: 2px solid #d1d8f0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#pergunta-container button:hover {
+    background-color: #c1d2f9; /* Azul mais suave */
 }
 
 footer {
