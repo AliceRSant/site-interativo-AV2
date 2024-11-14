@@ -1,4 +1,4 @@
-/* Resetando alguns estilos padrões */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #6a5acd; /* Lilás escuro */
+    background-color: #6a5acd; 
     color: white;
     padding: 20px;
     text-align: center;
@@ -37,7 +37,7 @@ button {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    background-color: #4f84e3; /* Azul claro */
+    background-color: #4f84e3; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -46,7 +46,7 @@ button {
 }
 
 button:hover {
-    background-color: #3b6cb3; /* Azul escuro */
+    background-color: #3b6cb3; 
 }
 
 .escondido {
@@ -58,10 +58,10 @@ button:hover {
 }
 
 #pergunta-container button {
-    display: block; /* Para deixar as alternativas em linha vertical */
+    display: block; 
     width: 100%;
     margin-bottom: 10px;
-    background-color: #e0e5f4; /* Azul mais claro */
+    background-color: #e0e5f4; 
     color: #333;
     font-size: 1.1em;
     padding: 12px;
@@ -71,7 +71,7 @@ button:hover {
 }
 
 #pergunta-container button:hover {
-    background-color: #c1d2f9; /* Azul mais suave */
+    background-color: #c1d2f9; 
 }
 
 footer {
